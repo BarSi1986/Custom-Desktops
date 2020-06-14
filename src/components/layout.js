@@ -1,51 +1,48 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
-import Header from "./header"
-import "./layout.css"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+const theme = {
+  fonts: {
+    museomoderno: "'MuseoModerno', cursive;",
+    logo: "'Saira Stencil One', cursive;"
+  },
+  colors: {
+    dark: "#101010",
+    light: "#F5F5F7",
 
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  )
+    linear_hero_one: "#37103E",
+    linear_hero_two: "#120D12",
+
+    linear_team_one: "#0E0E10",
+    linear_team_two: "#360D3E",
+  }
 }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+const GlobalStyle = createGlobalStyle`
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ${p => p.theme.fonts.museomoderno};
+  }
+  body{
+    background: ${p => p.theme.colors.dark};
+  }
+  p{
+    font-weight: 200;
+    font-size: 20px;
+  }
+`
+
+const Layout = ({ children }) => {
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      {children}
+    </ThemeProvider>
+  )
 }
 
 export default Layout
