@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
   body{
     background: ${p => p.theme.colors.dark};
   }
-  h1{
+  h1,h2{
     font-family: ${p => p.theme.fonts.header};
     letter-spacing: 2px;
   }

@@ -49,7 +49,7 @@ const SocialIconsArea = styled.div`
     width: 200px;
     position: absolute;
     left: 80px;
-    bottom: 30px;
+    bottom: 40px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -57,7 +57,7 @@ const SocialIconsArea = styled.div`
 
 const StyledIcon = styled(FontAwesomeIcon)`
     color: ${p => p.theme.colors.light};
-    font-size: 30px;
+    font-size: 25px;
 `
 
 const Hero = () => {
@@ -76,7 +76,6 @@ const Hero = () => {
     return (
         <HeroWrapper>
             <LeftContent>
-
                 <ContentArea>
                     <h1>BE READY FOR IT</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vero minima similique praesentium eum dolor doloribus dolorum esse eligendi dolor vero elit!</p>
