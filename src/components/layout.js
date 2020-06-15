@@ -4,8 +4,9 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 const theme = {
   fonts: {
-    museomoderno: "'MuseoModerno', cursive;",
-    logo: "'Saira Stencil One', cursive;"
+    museomoderno: "'MuseoModerno', cursive",
+    logo: "'Saira Stencil One', cursive",
+    header: "'Montserrat', sans-serif"
   },
   colors: {
     dark: "#101010",
@@ -30,9 +31,25 @@ const GlobalStyle = createGlobalStyle`
   body{
     background: ${p => p.theme.colors.dark};
   }
+  h1{
+    font-family: ${p => p.theme.fonts.header};
+    letter-spacing: 2px;
+  }
   p{
     font-weight: 200;
     font-size: 20px;
+  }
+  button{
+    font-family: ${p => p.theme.fonts.header};
+    font-weight: 300;
+    padding: 15px 40px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.4s cubic-bezier(0.17,0.2,0.05,1.0);
+    &:hover{
+      background: rgba(255,255,255, 0.2);
+    }
   }
 `
 

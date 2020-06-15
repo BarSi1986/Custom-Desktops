@@ -45,6 +45,9 @@ const BurgerArea = styled.div`
         z-index: 1;
         transform-origin: 4px 0px;
         transition: 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
+        &:nth-of-type(2){
+            width: 25px;
+        }
         &:first-child{
             transform-origin: 0% 0%;
         }
@@ -87,6 +90,7 @@ const NavBarAreaRight = styled.div`
     &.open{
         transform: translateX(0%);
     }
+    box-shadow: 3px 3px 10px -2px black;
 `
 
 const NavIcon = styled.div`
