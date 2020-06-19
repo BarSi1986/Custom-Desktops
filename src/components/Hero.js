@@ -49,7 +49,7 @@ const SocialIconsArea = styled.div`
     width: 200px;
     position: absolute;
     left: 80px;
-    bottom: 40px;
+    bottom: 50px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -58,6 +58,17 @@ const SocialIconsArea = styled.div`
 const StyledIcon = styled(FontAwesomeIcon)`
     color: ${p => p.theme.colors.light};
     font-size: 25px;
+`
+
+const SocialStyledBtn = styled.button`
+    background: none;
+    border-radius: 50px;
+    border: none;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    outline: none;
+
 `
 
 const Hero = () => {
@@ -83,9 +94,17 @@ const Hero = () => {
                 </ContentArea>
 
                 <SocialIconsArea>
-                    <StyledIcon icon={faFacebookF} />
-                    <StyledIcon icon={faInstagram} />
-                    <StyledIcon icon={faTwitter} />
+
+                    <SocialStyledBtn>
+                        <StyledIcon icon={faFacebookF} />
+                    </SocialStyledBtn>
+                    <SocialStyledBtn>
+                        <StyledIcon icon={faInstagram} />
+                    </SocialStyledBtn>
+                    <SocialStyledBtn>
+                        <StyledIcon icon={faTwitter} />
+                    </SocialStyledBtn>
+
                 </SocialIconsArea>
 
             </LeftContent>
