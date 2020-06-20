@@ -47,10 +47,10 @@ const InnerCircle = styled.div`
 
 const StyledIcon = styled(Icon)`
     position: absolute;
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
     top: 0px;
-    opacity: .4;
+    opacity: .3;
 `
 
 const Services = () => {
