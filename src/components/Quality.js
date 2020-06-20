@@ -7,7 +7,7 @@ height: 110vh;
 width: 100%;
 background-image: url(${({ image }) => image});
 background-size: cover;
-background-position: center;
+background-position: bottom center;
 position: relative;
 `
 

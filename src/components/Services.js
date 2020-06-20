@@ -11,12 +11,16 @@ const LeftSide = styled.div`
     flex-basis: 50%;
     background-image: url(${({ image }) => image});
     background-size: cover;
-    background-position: center;
+    background-position: bottom center;
 `
 
 const RightSide = styled.div`
     flex-basis: 50%;
-    background: ${p => p.theme.colors.linear_hero_two};
+    background: linear-gradient(
+        ${p => p.theme.colors.linear_hero_two},
+        #110D13
+    );
+    
 
     display: flex;
     flex-direction: column;
