@@ -3,12 +3,13 @@ import styled from 'styled-components'
 import { useStaticQuery, graphql } from "gatsby"
 
 const QualityArea = styled.div`
-height: 110vh;
+height: 130vh;
 width: 100%;
 background-image: url(${({ image }) => image});
 background-size: cover;
-background-position: bottom center;
+background-position: right center;
 position: relative;
+background-repeat: no-repeat;
 `
 
 const ContentArea = styled.div`

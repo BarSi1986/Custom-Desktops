@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from "gatsby"
+import Icon from '../images/olive-branch.svg'
 
 const ServicesSection = styled.div`
-    height: 120vh;
+    height: 150vh;
     display: flex;
 `
 
@@ -27,23 +28,12 @@ const RightSide = styled.div`
     align-items: center;
     justify-content: space-around;
 `
-
-const OuterCircle = styled.div`
-    width: 280px;
-    height: 280px;
-    background: linear-gradient(90deg, #C4C4C4, #7B0118);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-`
 const InnerCircle = styled.div`
     width: 270px;
     height: 270px;
-    background: ${p => p.theme.colors.linear_hero_two};
+    background: none;
     border-radius: 50%;
     transform: translateY(-8px);
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,6 +43,14 @@ const InnerCircle = styled.div`
         color: ${p => p.theme.colors.light};
         font-weight: 300;
     }
+`
+
+const StyledIcon = styled(Icon)`
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    top: 0px;
+    opacity: .4;
 `
 
 const Services = () => {
@@ -74,23 +72,20 @@ const Services = () => {
             </LeftSide>
 
             <RightSide>
-                <OuterCircle>
-                    <InnerCircle>
-                        <h2>BEST PERFORMANCE</h2>
-                    </InnerCircle>
-                </OuterCircle>
+                <InnerCircle>
+                    <StyledIcon />
+                    <h2>BEST PERFORMANCE</h2>
+                </InnerCircle>
 
-                <OuterCircle>
-                    <InnerCircle>
-                        <h2>BEST PRICE</h2>
-                    </InnerCircle>
-                </OuterCircle>
+                <InnerCircle>
+                    <StyledIcon />
+                    <h2>BEST PRICE</h2>
+                </InnerCircle>
 
-                <OuterCircle>
-                    <InnerCircle>
-                        <h2>FAST SHIPPING</h2>
-                    </InnerCircle>
-                </OuterCircle>
+                <InnerCircle>
+                    <StyledIcon />
+                    <h2>FAST SHIPPING</h2>
+                </InnerCircle>
             </RightSide>
         </ServicesSection>
 
