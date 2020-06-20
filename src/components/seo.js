@@ -72,6 +72,7 @@ function SEO({ description, lang, meta, title }) {
       <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;600&display=swap" rel="stylesheet"></link>
       <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet"></link>
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap" rel="stylesheet"></link>
     </Helmet>
   )
 }

@@ -13,7 +13,7 @@ background-repeat: no-repeat;
 `
 
 const ContentArea = styled.div`
-    height: 200px;
+    height: 180px;
     max-width: 450px;
     position: absolute;
     top: 50%;
@@ -43,7 +43,7 @@ const Quality = () => {
     <QualityArea image={quality_img.file.childImageSharp.fluid.src}>
 
       <ContentArea>
-        <h1>WE PROVIDE QUALITY</h1>
+        <h2>WE PROVIDE QUALITY</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vero minima similique praesentium eum dolor doloribus dolorum esse eligendi dolor vero elit!</p>
       </ContentArea>
 

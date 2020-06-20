@@ -6,7 +6,8 @@ const theme = {
   fonts: {
     museomoderno: "'MuseoModerno', cursive",
     logo: "'Saira Stencil One', cursive",
-    header: "'Montserrat', sans-serif"
+    header: "'Montserrat', sans-serif",
+    signs: "'Mr De Haviland', cursive"
   },
   colors: {
     dark: "#101010",
@@ -31,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
   body{
     background: ${p => p.theme.colors.dark};
   }
-  h1,h2{
+  h1,h2,h3{
     font-family: ${p => p.theme.fonts.header};
     letter-spacing: 2px;
   }

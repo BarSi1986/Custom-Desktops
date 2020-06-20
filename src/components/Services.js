@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Icon from '../images/olive-branch.svg'
 
 const ServicesSection = styled.div`
-    height: 150vh;
+    height: 130vh;
     display: flex;
 `
 
@@ -29,7 +29,7 @@ const RightSide = styled.div`
     justify-content: space-around;
 `
 const InnerCircle = styled.div`
-    width: 270px;
+    width: 220px;
     height: 270px;
     background: none;
     border-radius: 50%;
@@ -39,7 +39,7 @@ const InnerCircle = styled.div`
     justify-content: center;
     text-align: center;
 
-    h2{
+    h3{
         color: ${p => p.theme.colors.light};
         font-weight: 300;
     }
@@ -74,17 +74,17 @@ const Services = () => {
             <RightSide>
                 <InnerCircle>
                     <StyledIcon />
-                    <h2>BEST PERFORMANCE</h2>
+                    <h3>BEST PERFORMANCE</h3>
                 </InnerCircle>
 
                 <InnerCircle>
                     <StyledIcon />
-                    <h2>BEST PRICE</h2>
+                    <h3>BEST PRICE</h3>
                 </InnerCircle>
 
                 <InnerCircle>
                     <StyledIcon />
-                    <h2>FAST SHIPPING</h2>
+                    <h3>FAST SHIPPING</h3>
                 </InnerCircle>
             </RightSide>
         </ServicesSection>
