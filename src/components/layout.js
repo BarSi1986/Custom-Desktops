@@ -1,5 +1,6 @@
 import React from "react"
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import Footer from '../components/Footer'
 
 
 const theme = {
@@ -32,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
   body{
     background: ${p => p.theme.colors.dark};
   }
-  h1,h2,h3{
+  h1,h2,h3,h4,h5{
     font-family: ${p => p.theme.fonts.header};
     letter-spacing: 2px;
   }
@@ -59,6 +60,7 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       {children}
+      <Footer />
     </ThemeProvider>
   )
 }
